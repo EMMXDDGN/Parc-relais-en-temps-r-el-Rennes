@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Parc relais Rennes temps réel</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Carte en ligne de parcs relais en temps réel</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<script src="https://unpkg.com/maplibre-gl@^5.1.1/dist/maplibre-gl.js"></script>
+<link href="https://unpkg.com/maplibre-gl@^5.1.1/dist/maplibre-gl.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+
+    </head>
+  
+  <body>
+    
+    <div class="sidebar">
+      <div class="heading">
+        <h1>🅿️ Parcs relais en temps réel 🕑 </h1>
+         <!-- Bouton pour revenir à la vue initiale -->
+          <button id="resetViewBtn" style="position: absolute; top: 10px; left: 500px; z-index: 1000;">Accueil</button>
+        <style>
+      /* Généralités pour le bouton "Accueil" */
+      #resetViewBtn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+        padding: 10px 15px;
+        background-color: #ffa6d1;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      /* Réajustement du bouton pour les petits écrans */
+      @media (max-width: 768px) {
+        #resetViewBtn {
+          top: 15px;
+          left: 10px;
+          font-size: 14px;
+        }
+      }
+
+      /* Réajustement pour les très petits écrans (mobiles) */
+      @media (max-width: 480px) {
+        #resetViewBtn {
+          top: 10px;
+          left: 10px;
+          font-size: 14px;
+          padding: 8px 12px;
+        }
+      }
+    </style>
+      </div>
+      <div id="listings" class="listings"></div>
+      
+    </div>
+    
+    
+    <div id="map" class="map"></div>
+    
+    
+    <script>
+
+    </script>
+  </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

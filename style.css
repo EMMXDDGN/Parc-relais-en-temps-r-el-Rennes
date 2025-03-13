@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+body {
+    color: #404040;
+    font: 400 15px/22px 'Roboto', sans-serif;
+  }
+
+  .heading {
+    background: #404040;
+    border-bottom: 1px solid #eee;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+  }
+
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 27px;
+    color: #fff;
+    line-height: 20px;
+    padding: 20px 2px;
+    font-weight: bold;
+    margin : 0;
+  }
+
+
+  a {
+    color: #404040;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #101010;
+  }
+
+  .sidebar {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-right: 1px solid rgb(0 0 0 / 25%);
+  }
+
+  #map {
+    position: absolute;
+    left: 30%;
+    width: 70%;
+    top: 0;
+    bottom: 0;
+  }
+
+.listings {
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 60px;
+}
+
+.listings .item {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.listings .item:last-child {
+  border-bottom: none;
+}
+
+.listings .item .title {
+  display: block;
+  color: #d2168a;
+  font-weight: 700;
+}
+
+.listings .item .title small {
+  font-weight: 400;
+}
+
+.listings .item.active .title,
+.listings .item .title:hover {
+  color: #8cc63f;
+}
+
+.listings .item.active {
+  background-color: #f8f8f8;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  border-left: 0;
+  background: rgba(0 0 0 0.1);
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00853e;
+  border-radius: 10;
+}
+
+
+/* Style épuré pour les pop-ups rondes */
+
+.maplibregl-popup {
+  margin-top: -10px;
+  border-radius: 20px;
+}
+
+.maplibregl-popup-close-button {
+  color: #fff;
+}
+
+.maplibregl-popup-content {
+  font-family: 'Roboto', sans-serif;
+  width: 160px;
+  background: #ffa6d1; /* rose clair */
+  border: 2px solid #d2168a; /* rose foncé */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+
+.maplibregl-popup-content h3 {
+  background: none;
+  color: #d2168a;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.maplibregl-popup-content h4 {
+  margin: 5px 0 0 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.maplibregl-popup-content div {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.maplibregl-popup-anchor-top > .maplibregl-popup-content {
+  margin-top: 0px;
+}
+
+.maplibregl-popup-anchor-top > .maplibregl-popup-tip {
+  border-bottom-color: #d2168a;
+}
